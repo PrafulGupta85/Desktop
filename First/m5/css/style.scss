@@ -1,0 +1,32 @@
+// Define mixin for button styles
+@mixin button-styles($background-color, $text-color) {
+  background-color: $background-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  width: fit-content;
+}
+
+// Define mixin for box styles
+@mixin box-styles($background-color, $text-color) {
+  background-color: $background-color;
+  color: $text-color;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+// Include mixins
+.box {
+  @include box-styles(#3498db, #ffffff); // Include box styles mixin
+  margin: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.button {
+  @include button-styles(#3498db, #ffffff);
+}

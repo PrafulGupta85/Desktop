@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgba(20, 71, 71, 0.808);
+  color: rgb(205, 219, 231);
+  nav {
+    ul {
+      gap: 30px;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      display: flex;
+    }
+  }
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+
+  .box {
+    border: 2px solid rgb(2, 85, 2);
+    margin: 10px 0;
+    flex-basis: 25%;
+  }
+  #box-1 {
+    // order: 1;
+    // flex-basis: 200px;
+    align-self: flex-end;
+  }
+}

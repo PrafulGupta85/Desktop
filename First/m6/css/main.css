@@ -1,0 +1,74 @@
+html,
+body {
+  background-color: rgba(228, 225, 225, 0.9058823529);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #042c46;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+header ul a {
+  color: white;
+  text-decoration: none;
+}
+header ul a:hover {
+  color: pink;
+}
+
+.s1 {
+  border: 2px solid rebeccapurple;
+  height: 40vh;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+.s1 .box {
+  background-color: rgba(44, 138, 83, 0.5607843137);
+  color: white;
+  border: 2px solid rgba(19, 65, 19, 0.767);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.s2 {
+  border: 2px solid rebeccapurple;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+}
+.s2 .box2 {
+  background-color: rgba(44, 138, 83, 0.5607843137);
+  border: 2px solid red;
+  border-radius: 5px;
+  margin: 20px 0;
+  width: 200px;
+  height: 300px;
+}
+.s2 #b4 {
+  flex-grow: 1;
+  order: 1;
+}
+.s2 #b6 {
+  align-self: flex-end;
+}
+
+footer {
+  background-color: #042c46;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

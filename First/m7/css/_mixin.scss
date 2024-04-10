@@ -1,0 +1,11 @@
+@mixin flexprop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin commontext($fsize) {
+  color: #222f3e;
+  font-size: $fsize;
+}
