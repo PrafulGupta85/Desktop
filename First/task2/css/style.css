@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  width: 25vw;
+  height: 100vh;
+  font-weight: 800;
+  color: rgba(86, 81, 81, 0.6588235294);
+  background-color: rgba(227, 227, 227, 0.64);
+}
+.sidebar .logo {
+  padding: 1.5rem 0px 0 3rem;
+  display: flex;
+  justify-content: start;
+}
+.sidebar .logo img {
+  height: 3rem;
+}
+.sidebar .sideul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sidebar .sidebtn {
+  padding: 0.9rem 0px 0.5rem 2rem;
+  display: flex;
+  gap: 1.3rem;
+  cursor: pointer;
+}
+.sidebar .sidebtn:hover {
+  color: white;
+  background-color: rgb(49, 144, 233);
+}
+.sidebar .dropdown-llm {
+  margin-left: 2.9rem;
+}
+.sidebar .dropdown-admin {
+  margin-left: 6.4rem;
+}
+.sidebar img {
+  height: 1.6rem;
+  width: auto;
+}/*# sourceMappingURL=style.css.map */

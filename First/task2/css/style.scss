@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  width: 25vw;
+  height: 100vh;
+  font-weight: 800;
+  color: #565151a8;
+  background-color: rgb(227 227 227 / 64%);
+  .logo {
+    padding: 1.5rem 0px 0 3rem;
+    display: flex;
+    justify-content: start;
+    // border: 2px solid green;
+    img {
+      height: 3rem;
+    }
+  }
+  .sideul {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sidebtn {
+    // border: 1px solid rgb(255, 81, 0);
+    padding: 0.9rem 0px 0.5rem 2rem;
+    display: flex;
+    gap: 1.3rem;
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background-color: rgb(49, 144, 233);
+    }
+  }
+  .dropdown-llm {
+    margin-left: 2.9rem;
+  }
+  .dropdown-admin {
+    margin-left: 6.4rem;
+  }
+  img {
+    height: 1.6rem;
+    width: auto;
+  }
+}
