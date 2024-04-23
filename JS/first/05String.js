@@ -59,43 +59,43 @@
 //   demo.innerHTML = "OOps!!";
 // }
 
-const demo = document.querySelector("#demo");
+// const demo = document.querySelector("#demo");
 
-const date = new Date();
-console.log(date);
-const day = date.getDay();
-console.log(day);
+// const date = new Date();
+// console.log(date);
+// const day = date.getDay();
+// console.log(day);
 
-let whichDay = "";
+// let whichDay = "";
 
-switch (day) {
-  case 1:
-    whichDay = "Monday";
-    break;
-  case 2:
-    whichDay = "Tuesday";
-    break;
-  case 3:
-    whichDay = "Wednesday";
-    break;
-  case 4:
-    whichDay = "Thursday";
-    break;
-  case 5:
-    whichDay = "Friday";
-    break;
-  case 6:
-    whichDay = "Saturday";
-    break;
-  case 7:
-    whichDay = "Sunday";
-    break;
-  default:
-    console.log("Day does not belong to weekdays");
-    break;
-}
+// switch (day) {
+//   case 1:
+//     whichDay = "Monday";
+//     break;
+//   case 2:
+//     whichDay = "Tuesday";
+//     break;
+//   case 3:
+//     whichDay = "Wednesday";
+//     break;
+//   case 4:
+//     whichDay = "Thursday";
+//     break;
+//   case 5:
+//     whichDay = "Friday";
+//     break;
+//   case 6:
+//     whichDay = "Saturday";
+//     break;
+//   case 7:
+//     whichDay = "Sunday";
+//     break;
+//   default:
+//     console.log("Day does not belong to weekdays");
+//     break;
+// }
 
-demo.innerHTML = whichDay;
+// demo.innerHTML = whichDay;
 
 // if (hour < 10) {
 //   demo.innerHTML = "Hurray";
