@@ -7,9 +7,16 @@
 // const string = '"Geeks" For Geeks';
 // console.log(string);
 
-// let str = "Mind power soul and mind in power and soul";
-// let part = str.replaceAll("power", "mice");
+const paragraph = "I think Ruth's dog is cuter than your dog!";
 
+// console.log(paragraph.replaceAll("dog", "monkey"));
+
+let str =
+  "power is in dark room and his soul got out of the body,Oo power power";
+let str2 = str.replaceAll("power", "mice");
+console.log(str2);
+// // let part =
+// // console.log(part);
 // console.log(str);
 // str.toUpperCase();
 // console.log(str);
