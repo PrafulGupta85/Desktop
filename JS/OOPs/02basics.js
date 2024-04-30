@@ -9,10 +9,14 @@ function User(username, email, isLoggedIn) {
     console.log(`Hello ${this.username}, email: ${this.email}`);
     console.log(this);
   };
+  this.update = function (name) {
+    this.username = name;
+  };
 }
 
 const userOne = new User("Yash", "yash@gz.com", true);
 userOne.greet();
+userOne.update("Rahul");
 
 function Car(carName, carBrand, carPrice) {
   (this.carName = carName),
@@ -29,7 +33,7 @@ function Car(carName, carBrand, carPrice) {
 
 const bmwCar = new Car("730d", "BMW", 70);
 
-bmwCar.setBrand("Volvo");
-bmwCar.getDetails();
+// bmwCar.setBrand("Volvo");
+// bmwCar.getDetails();
 
 const audiCar = new Car("q3", "Audi", 90);

@@ -71,15 +71,19 @@ function person(fname, lname) {
     return `First name is: ${firstname} Last 
 			name is: ${lastname}`;
   };
-
+  this.update = function (name) {
+    this.firstname = name;
+    // this.lastname = lname;
+  };
   this.getDetails_access = function () {
-    return `First name is: ${firstname}, Last name is: ${lastname}`;
+    return `First name is: ${this.firstname}, Last name is: ${this.lastname}`;
   };
 }
 let person1 = new person("Mukul", "Latiyan");
-// console.log(person1.firstname); // undefined
-// console.log(person1.getDetails_noaccess); // undefined
-// console.log(person1.getDetails_access()); // shows output
+person1.update("Rahul");
+console.log(person1.firstname); // undefined
+console.log(person1.getDetails_noaccess); // undefined
+console.log(person1.getDetails_access()); // shows output
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Here we are using object literals to create the object
@@ -93,13 +97,13 @@ let car = {
   },
 };
 car.brakesType = "All Disc"; // add property to class
-car.start();
+// car.start();
 
 car.stop = function () {
   console.log("Turning the Engine off...");
   console.log(this);
 };
-car.stop();
+// car.stop();
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // JSON Objects
