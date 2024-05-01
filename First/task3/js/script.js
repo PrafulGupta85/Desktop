@@ -76,53 +76,69 @@ document.addEventListener("keydown", function (e) {
   console.log("Key - ", e.key);
   switch (e.key) {
     case "a":
+    case "A":
       a.play();
       break;
 
     case "s":
+    case "S":
       s.play();
       break;
 
     case "d":
+    case "D":
       d.play();
       break;
     case "f":
+    case "F":
       f.play();
       break;
     case "g":
+    case "G":
       g.play();
       break;
     case "h":
+    case "H":
       h.play();
       break;
     case "j":
+    case "J":
       j.play();
       break;
     case "k":
+    case "K":
       k.play();
       break;
     case "l":
+    case "L":
       l.play();
       break;
     case "w":
+    case "W":
       w.play();
       break;
     case "e":
+    case "E":
       ebtn.play();
       break;
     case "r":
+    case "R":
       r.play();
       break;
     case "t":
+    case "T":
       t.play();
       break;
     case "y":
+    case "Y":
       y.play();
       break;
     case "u":
+    case "U":
       u.play();
       break;
     case "i":
+    case "I":
       i.play();
       break;
     case ";":

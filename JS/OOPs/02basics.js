@@ -31,6 +31,8 @@ function Car(carModel, carBrand, carPrice) {
   };
 }
 
+const userTwo = new User("Jhon Cena", "praful@gz.com");
+
 const bmwCar = new Car("730d", "BMW", 70);
 
 bmwCar.setCarBrand("Volvo");
