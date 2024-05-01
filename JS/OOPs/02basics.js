@@ -6,8 +6,8 @@ function User(username, email, isLoggedIn) {
     (this.isLoggedIn = isLoggedIn);
 
   this.greet = function () {
-    console.log(`Hello ${this.username}, email: ${this.email}`);
-    console.log(this);
+    return `Hello ${this.username}, email: ${this.email}`;
+    // console.log(this);
   };
   this.update = function (name) {
     this.username = name;
@@ -15,16 +15,16 @@ function User(username, email, isLoggedIn) {
 }
 
 const userOne = new User("Yash", "yash@gz.com", true);
-userOne.greet();
 userOne.update("Rahul");
-
-function Car(carName, carBrand, carPrice) {
-  (this.carName = carName),
+// console.log(userOne.greet());
+//  -------------------------------------------------------------
+function Car(carModel, carBrand, carPrice) {
+  (this.carModel = carModel),
     (this.carBrand = carBrand),
     (this.carPrice = carPrice);
 
   this.getDetails = function () {
-    return `The ${carName} is of ${carBrand} company and have price of ${carPrice} `;
+    return `The ${carModel} belongs to ${carBrand} company and have price of $${carPrice} `;
   };
   this.setCarBrand = function (carBrand) {
     this.carBrand = carBrand;
@@ -33,7 +33,27 @@ function Car(carName, carBrand, carPrice) {
 
 const bmwCar = new Car("730d", "BMW", 70);
 
-// bmwCar.setBrand("Volvo");
-// bmwCar.getDetails();
+bmwCar.setCarBrand("Volvo");
+console.log(bmwCar.getDetails());
+console.log(bmwCar.carPrice);
 
-const audiCar = new Car("q3", "Audi", 90);
+function Shape(name, noOfSides, sideLength) {
+  this.name = name;
+  this.noOfSides = noOfSides;
+  this.sideLength = sideLength;
+
+  this.updateName = function (newName) {
+    this.name = newName;
+  };
+  this.updateSides = function (sides) {
+    this.noOfSides = sides;
+  };
+  this.updaeLength = function (length) {
+    this.sideLength = length;
+  };
+  this.showDetails = function () {
+    return `${this.name} has ${noOfSides} sides of length ${sideLength}`;
+  };
+}
+let FirstShape = new Shape("Rectangle", 4, 10);
+console.log(FirstShape.showDetails());

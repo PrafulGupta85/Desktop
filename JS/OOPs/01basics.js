@@ -68,11 +68,14 @@ function person(fname, lname) {
   let lastname = lname;
 
   let getDetails_noaccess = function () {
+    console.log(firstname);
+
     return `First name is: ${firstname} Last 
 			name is: ${lastname}`;
   };
   this.update = function (name) {
     this.firstname = name;
+    console.log(this.firstname);
     // this.lastname = lname;
   };
   this.getDetails_access = function () {
@@ -80,7 +83,7 @@ function person(fname, lname) {
   };
 }
 let person1 = new person("Mukul", "Latiyan");
-person1.update("Rahul");
+// person1.update("Rahul");
 console.log(person1.firstname); // undefined
 console.log(person1.getDetails_noaccess); // undefined
 console.log(person1.getDetails_access()); // shows output

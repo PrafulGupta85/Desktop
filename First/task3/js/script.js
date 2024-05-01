@@ -82,7 +82,7 @@ document.addEventListener("keydown", function (e) {
     case "s":
       s.play();
       break;
-      
+
     case "d":
       d.play();
       break;
@@ -131,38 +131,38 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-document.addEventListener("onclick", function (e) {
-  console.log("Key pressed", e.key);
-  switch (e.key) {
-    case "a":
-      a.play();
-      break;
-    case "s":
-      s.play();
-      break;
-    case "d":
-      d.play();
-      break;
-    case "f":
-      f.play();
-      break;
-    case "g":
-      g.play();
-      break;
-    case "h":
-      h.play();
-      break;
-    case "j":
-      j.play();
-      break;
-    case "k":
-      k.play();
-      break;
-    case "l":
-      l.play();
-      break;
-    case "semicol":
-      semicol.play();
-      break;
-  }
-});
+// document.addEventListener("onclick", function (e) {
+//   console.log("Key pressed", e.key);
+//   switch (e.key) {
+//     case "a":
+//       a.play();
+//       break;
+//     case "s":
+//       s.play();
+//       break;
+//     case "d":
+//       d.play();
+//       break;
+//     case "f":
+//       f.play();
+//       break;
+//     case "g":
+//       g.play();
+//       break;
+//     case "h":
+//       h.play();
+//       break;
+//     case "j":
+//       j.play();
+//       break;
+//     case "k":
+//       k.play();
+//       break;
+//     case "l":
+//       l.play();
+//       break;
+//     case "semicol":
+//       semicol.play();
+//       break;
+//   }
+// });
