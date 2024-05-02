@@ -1,61 +1,119 @@
-// Constructor Function
+// This object is created using Object Literal
+let demo = {
+  fName: "Praful",
+  lName: "Gupta",
 
-function User(username, email, isLoggedIn) {
-  (this.username = username),
-    (this.email = email),
-    (this.isLoggedIn = isLoggedIn);
+  //method
+  getFunction: function () {
+    return `This is Object demo and First Name ${this.fName} and Last Name ${this.lName}`;
+  },
 
-  this.greet = function () {
-    return `Hello ${this.username}, email: ${this.email}`;
-    // console.log(this);
+  // object in object
+  phoneNo: {
+    number: 9989,
+    type: "Landline",
+    area: "UP",
+  },
+};
+// console.log(demo.getFunction());
+// console.log(demo.phoneNo.area, demo.phoneNo.number);
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+class Vehicle {
+  constructor(name, company, engine) {
+    (this.name = name), (this.company = company), (this.engine = engine);
+  }
+
+  getDetails() {
+    return `The brand ${this.company}, has car ${this.name} and engine ${this.engine}`;
+  }
+}
+
+let audiQ8 = new Vehicle("Q8", "Audi", 3000);
+let bmwx1 = new Vehicle("x1", "Bmw", 2800);
+
+// console.log(bmwx1.getDetails());
+// console.log(audiQ8.getDetails());
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// This is similar to above example but here we are using OOPS properties
+// Here we use encapsulation to wrap properties and fun.
+class PersonOne {
+  constructor(name, id, mail) {
+    (this.name = name), (this.id = id), (this.mail = mail);
+  }
+
+  setAddress(add) {
+    this.add = add;
+  }
+
+  getOutput() {
+    return `Person Name: ${this.name}, id: ${this.id}, mail: ${this.mail} and address: ${this.add}`;
+  }
+}
+
+let Ajay = new PersonOne("Ajay", 1, "ajay@su.com");
+Ajay.setAddress("Palampur, India");
+// console.log(Ajay.getOutput());
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Abstraction example
+// By changing the way we define a function we can restrict its scope.
+
+function person(fname, lname) {
+  let firstname = fname;
+  let lastname = lname;
+
+  let getDetails_noaccess = function () {
+    console.log(firstname);
+
+    return `First name is: ${firstname} Last 
+			name is: ${lastname}`;
   };
   this.update = function (name) {
-    this.username = name;
+    this.firstname = name;
+    console.log(this.firstname);
+    // this.lastname = lname;
+  };
+  this.getDetails_access = function () {
+    return `First name is: ${this.firstname}, Last name is: ${this.lastname}`;
   };
 }
+let person1 = new person("Mukul", "Latiyan");
+// person1.update("Rahul");
+console.log(person1.firstname); // undefined
+console.log(person1.getDetails_noaccess); // undefined
+console.log(person1.getDetails_access()); // shows output
 
-const userOne = new User("Yash", "yash@gz.com", true);
-userOne.update("Rahul");
-// console.log(userOne.greet());
-//  -------------------------------------------------------------
-function Car(carModel, carBrand, carPrice) {
-  (this.carModel = carModel),
-    (this.carBrand = carBrand),
-    (this.carPrice = carPrice);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Here we are using object literals to create the object
+let car = {
+  name: "GT",
+  maker: "BMW",
+  enginer: "1998cc",
+  start: function () {
+    console.log("Starting the engine....");
+    console.log(this);
+  },
+};
+car.brakesType = "All Disc"; // add property to class
+// car.start();
 
-  this.getDetails = function () {
-    return `The ${carModel} belongs to ${carBrand} company and have price of $${carPrice} `;
-  };
-  this.setCarBrand = function (carBrand) {
-    this.carBrand = carBrand;
-  };
-}
+car.stop = function () {
+  console.log("Turning the Engine off...");
+  console.log(this);
+};
+// car.stop();
 
-const userTwo = new User("Jhon Cena", "praful@gz.com");
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// JSON Objects
 
-const bmwCar = new Car("730d", "BMW", 70);
-
-bmwCar.setCarBrand("Volvo");
-console.log(bmwCar.getDetails());
-console.log(bmwCar.carPrice);
-
-function Shape(name, noOfSides, sideLength) {
-  this.name = name;
-  this.noOfSides = noOfSides;
-  this.sideLength = sideLength;
-
-  this.updateName = function (newName) {
-    this.name = newName;
-  };
-  this.updateSides = function (sides) {
-    this.noOfSides = sides;
-  };
-  this.updaeLength = function (length) {
-    this.sideLength = length;
-  };
-  this.showDetails = function () {
-    return `${this.name} has ${noOfSides} sides of length ${sideLength}`;
-  };
-}
-let FirstShape = new Shape("Rectangle", 4, 10);
-console.log(FirstShape.showDetails());
+// const person = {
+//     "name" : "Jhon",
+//     "age" : 35,
+//     "profession" : "Wrestler"
+// }
+// JSON.parse(person);  // This converts JSON object to Javascript object

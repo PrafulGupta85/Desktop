@@ -1,6 +1,3 @@
-// Online Javascript Editor for free
-// Write, Edit and Run your Javascript code using JS Online Compiler
-
 // const tF = (noOfChildren, partnerName, geoLocn, jobTitle)=>{
 //     return `You will be a ${jobTitle} in ${geoLocn}, and married to ${partnerName} with ${noOfChildren} kids.`
 // }
